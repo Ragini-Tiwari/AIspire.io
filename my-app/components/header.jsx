@@ -10,9 +10,9 @@ const Header = () => {
         <img
           src="/logo.png"
           alt="AIspire logo"
-          width={200}
-          height={60}
-          className="h-12 py-1 w-auto object-contain"
+          width={400}
+          height={320}
+          className="h-24 py-1 w-auto object-contain"
         />
       </nav>
 

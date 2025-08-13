@@ -29,7 +29,7 @@ export default function RootLayout({ children }) {
             <Header/>
             <main className="min-h-screen">{children}</main> 
             {/*footer*/}
-            <footer classname="bg-muted/50 py-12">
+            <footer className="bg-muted/50 py-12">
             <div className="container mx-auto p-4 text-center text-gray-200">
               <div>
                 <p>Made with ❤️ by Ragini</p>
