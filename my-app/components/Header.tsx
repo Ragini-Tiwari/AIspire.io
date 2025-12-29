@@ -25,55 +25,57 @@ const Header = () => {
       <nav className="container mx-auto px-4 h-16 flex items-center justify-between">
         {/* Logo */}
         <Link href="/">
-          <Image
-            src="/logo.png"
-            alt="AIspire logo"
-            width={400}
-            height={320}
-            className="h-24 py-1 w-auto object-contain"
-          />
+          <div className="flex items-center gap-2">
+             <Image
+              src="/logo.png"
+              alt="AIspire logo"
+              width={48}
+              height={48}
+              className="h-10 w-auto object-contain"
+            />
+            <span className="text-xl font-bold tracking-tight bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+              AIspire
+            </span>
+          </div>
         </Link>
 
         {/* Nav Right */}
-        <div className="flex items-center space-x-2 md:space-x-4">
+        <div className="flex items-center space-x-2 md:space-x-6">
+          <Link href="/collab" className="text-sm font-medium hover:text-blue-400 transition-colors hidden md:block">
+            Collab Hub
+          </Link>
+          <Link href="/blog" className="text-sm font-medium hover:text-blue-400 transition-colors hidden md:block">
+            Blog
+          </Link>
+
           <SignedIn>
             {/* Dashboard */}
             <Link href="/dashboard">
-              <Button variant="outline">
+              <Button variant="ghost" className="gap-2">
                 <LayoutDashboard className="h-4 w-4" />
-                <span className="hidden md:block">Industry Insights</span>
+                <span className="hidden md:block">Dashboard</span>
               </Button>
             </Link>
 
-            {/* Dropdown */}
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <Button>
-                  <LayoutDashboard className="h-4 w-4" />
-                  <span className="hidden md:block">Growth Tools</span>
+                <Button variant="outline" className="gap-2">
+                  <PenBox className="h-4 w-4" />
+                  <span className="hidden md:block">Create</span>
                   <ChevronDown className="h-4 w-4" />
                 </Button>
               </DropdownMenuTrigger>
-              <DropdownMenuContent>
+              <DropdownMenuContent align="end">
                 <DropdownMenuItem>
-                  <Link href={"/resume"} className="flex items-center gap-2">
-                    <FileText className="h-4 w-4" />
-                    <span>Build Resume</span>
-                  </Link>
-                </DropdownMenuItem>
-                <DropdownMenuItem>
-                  <Link
-                    href={"/ai-cover-letter"}
-                    className="flex items-center gap-2"
-                  >
+                  <Link href="/blog/write" className="flex items-center gap-2 w-full">
                     <PenBox className="h-4 w-4" />
-                    <span>Cover Letter</span>
+                    <span>Write a Blog</span>
                   </Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem>
-                  <Link href={"/interview"} className="flex items-center gap-2">
-                    <GraduationCap className="h-4 w-4" />
-                    <span>Interview Prep</span>
+                  <Link href="/collab/new" className="flex items-center gap-2 w-full">
+                    <LayoutDashboard className="h-4 w-4" />
+                    <span>Start Collaboration</span>
                   </Link>
                 </DropdownMenuItem>
               </DropdownMenuContent>
