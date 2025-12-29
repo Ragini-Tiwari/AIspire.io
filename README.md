@@ -72,6 +72,6 @@ This project is licensed under the **MIT License**.
 
 ## 💡 Author
 
-**Ragini Kumari**  
+**Ragini**  
 Full Stack Developer  
 Building tools for developers, by developers 💙
