@@ -1,5 +1,5 @@
-import { Button } from "../../components/ui/button";
-import { Badge } from "../../components/ui/badge";
+import { Button } from "../../../components/ui/button";
+import { Badge } from "../../../components/ui/badge";
 import { ChevronLeft, Calendar, User, Share2, MessageCircle } from "lucide-react";
 import Link from "next/link";
 

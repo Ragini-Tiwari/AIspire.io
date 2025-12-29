@@ -1,8 +1,8 @@
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Label } from "@/components/ui/label";
+import { Button } from "../../../components/ui/button";
+import { Input } from "../../../components/ui/input";
+import { Textarea } from "../../../components/ui/textarea";
+import { Card, CardContent, CardHeader, CardTitle } from "../../../components/ui/card";
+import { Label } from "../../../components/ui/label";
 import { PenBox, Image as ImageIcon, Link as LinkIcon, Send } from "lucide-react";
 import Link from "next/link";
 
