@@ -1,5 +1,12 @@
 # 🚀 AIspire — Next Generation Developer Collaboration Platform
 
+![Build](https://img.shields.io/badge/build-active-success)
+![Status](https://img.shields.io/badge/status-in%20development-blue)
+![Next.js](https://img.shields.io/badge/Next.js-App%20Router-black)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-UI-06B6D4)
+![shadcn/ui](https://img.shields.io/badge/UI-shadcn%2Fui-000000)
+![License](https://img.shields.io/badge/license-MIT-green)
+
 **AIspire** is a modern, AI-powered platform built for developers to **collaborate, showcase projects, and grow together**.  
 It brings collaboration, blogging, project showcasing, and productivity into **one seamless developer experience**.
 
@@ -74,4 +81,5 @@ This project is licensed under the **MIT License**.
 
 **Ragini**  
 Full Stack Developer  
+
 Building tools for developers, by developers 💙
