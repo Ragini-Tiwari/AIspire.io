@@ -2,6 +2,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
 import Header from "../components/Header";   // Fixed path
+import Footer from "../components/Footer";
 import { ClerkProvider } from "@clerk/nextjs";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -23,16 +24,13 @@ export default function RootLayout({ children }) {
             disableTransitionOnChange
           >
             {/* Header */}
+            {/* Header */}
             <Header />
 
             <main className="min-h-screen">{children}</main>
 
             {/* Footer */}
-            <footer className="bg-muted/50 py-12">
-              <div className="container mx-auto p-4 text-center text-gray-200">
-                <p>Made with ❤️ by Ragini</p>
-              </div>
-            </footer>
+            <Footer />
           </ThemeProvider>
         </body>
       </html>
