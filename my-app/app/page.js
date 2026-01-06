@@ -85,7 +85,7 @@ export default function Home() {
               <div className="w-12 h-12 rounded-lg bg-purple-500/10 flex items-center justify-center mb-6 group-hover:bg-purple-500/20 transition-colors">
                 <Layout className="w-6 h-6 text-purple-500" />
               </div>
-              <h3 className="text-xl font-bold mb-3">Smart Dashboard</h3>
+              <h3 className="text-xl font-bold mb-3">Dashboard</h3>
               <p className="text-muted-foreground">
                 Manage your projects, tracks your growth metrics, and stay updated with your collaboration requests in one place.
               </p>
