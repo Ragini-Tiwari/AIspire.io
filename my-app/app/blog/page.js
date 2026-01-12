@@ -62,10 +62,11 @@ export default function BlogList() {
                 {BLOG_POSTS.map((post) => (
                     <Card key={post.id} className="overflow-hidden group hover:shadow-2xl transition-all duration-300 border-muted-foreground/10">
                         <div className="relative h-48 overflow-hidden">
-                            <img
+                            <Image
                                 src={post.image}
                                 alt={post.title}
-                                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                                fill
+                                className="object-cover transition-transform duration-500 group-hover:scale-110"
                             />
                             <Badge className="absolute top-4 left-4 bg-blue-600/90 hover:bg-blue-600">{post.category}</Badge>
                         </div>

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Button } from "../../../components/ui/button";
 import { Badge } from "../../../components/ui/badge";
 import { ChevronLeft, Calendar, User, Share2, MessageCircle } from "lucide-react";
@@ -32,10 +33,11 @@ export default function BlogPost() {
                 </header>
 
                 <div className="relative aspect-video rounded-2xl overflow-hidden mb-12 border shadow-xl">
-                    <img
+                    <Image
                         src="https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1200&auto=format&fit=crop"
                         alt="AI Concept"
-                        className="w-full h-full object-cover"
+                        fill
+                        className="object-cover"
                     />
                 </div>
 
@@ -60,8 +62,8 @@ export default function BlogPost() {
                         in production environments.
                     </p>
 
-                  <div className="bg-muted/50 p-8 rounded-2xl border my-12 italic">
-                     {`The goal of AI is not to replace the developer, but to amplify their creative potential
+                    <div className="bg-muted/50 p-8 rounded-2xl border my-12 italic">
+                        {`The goal of AI is not to replace the developer, but to amplify their creative potential
                      and handle the mundane, so we can focus on building the extraordinary.`}
                     </div>
 

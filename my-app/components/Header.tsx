@@ -4,8 +4,6 @@ import { Button } from "./ui/button";
 import Link from "next/link";
 import {
   ChevronDown,
-  FileText,
-  GraduationCap,
   LayoutDashboard,
   PenBox,
 } from "lucide-react";
@@ -26,7 +24,7 @@ const Header = () => {
         {/* Logo */}
         <Link href="/">
           <div className="flex items-center gap-2">
-             <Image
+            <Image
               src="/logo.png"
               alt="AIspire logo"
               width={48}

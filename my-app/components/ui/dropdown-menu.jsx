@@ -25,7 +25,7 @@ function DropdownMenuTrigger({
 }
 
 function DropdownMenuContent({
-  className,
+  className = "",
   sideOffset = 4,
   ...props
 }) {
@@ -50,8 +50,8 @@ function DropdownMenuGroup({
 }
 
 function DropdownMenuItem({
-  className,
-  inset,
+  className = "",
+  inset = undefined,
   variant = "default",
   ...props
 }) {
