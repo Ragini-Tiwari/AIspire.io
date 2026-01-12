@@ -1,7 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
-import Header from "../components/Header";   // Fixed path
+import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { ClerkProvider } from "@clerk/nextjs";
 
@@ -12,8 +12,9 @@ export const metadata = {
   description: "(AI + Aspire) — Inspiring through AI",
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
+    // @ts-expect-error ClerkProvider types mismatch with React 19
     <ClerkProvider>
       <html lang="en" suppressHydrationWarning>
         <body className={inter.className}>
@@ -23,13 +24,8 @@ export default function RootLayout({ children }) {
             enableSystem
             disableTransitionOnChange
           >
-            {/* Header */}
-            {/* Header */}
             <Header />
-
             <main className="min-h-screen">{children}</main>
-
-            {/* Footer */}
             <Footer />
           </ThemeProvider>
         </body>
