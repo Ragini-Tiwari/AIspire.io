@@ -60,10 +60,11 @@ export default function BlogPost() {
                         in production environments.
                     </p>
 
-                    <div className="bg-muted/50 p-8 rounded-2xl border my-12 italic">
-                        "The goal of AI is not to replace the developer, but to amplify their creative potential
-                        and handle the mundane, so we can focus on building the extraordinary."
+                  <div className="bg-muted/50 p-8 rounded-2xl border my-12 italic">
+                     {`The goal of AI is not to replace the developer, but to amplify their creative potential
+                     and handle the mundane, so we can focus on building the extraordinary.`}
                     </div>
+
 
                     <p>
                         Stay tuned as we continue to roll out new features in the AIspire Collab Hub to
